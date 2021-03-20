@@ -1,0 +1,320 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/ceb4ead567.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script> -->
+    <!-- <title>FAQ</title> -->
+	<style>
+	img{
+	  border-radius:10px; 
+	}
+	.p{
+	font-weight:lighter;
+	color:gray;
+	}
+	.p1{
+	font-weight:lighter;
+	color:gray;
+	padding-bottom:5px;
+	font-size:21px;
+	}
+	
+	.a{
+	padding-top:42px;
+	
+	}
+	.zoom{
+	
+	transition: transform .2s;
+	width:40px;
+	height:40px;
+	
+	
+	}
+	.zoom:hover{
+	transform:scale(1.1);
+	}
+	
+	
+	</style>
+  <!-- </head> -->
+  <script>
+
+$(document).ready(function(){
+$("#maths_10").click(function(){
+$(location).attr('href','/maths-10');
+
+
+});
+$("#maths_12").click(function(){
+// $(location).attr('href','maths_12.html');
+$(location).attr('href','/maths-12');
+$(".zoom").addClass("shadow");
+
+});
+$("#physics_12").click(function(){
+$(location).attr('href','/physics-12');
+
+
+});
+$("#chem_12").click(function(){
+$(location).attr('href','/chem-12');
+
+
+});
+$("#pe_12").click(function(){
+$(location).attr('href','/pe');
+
+
+});
+$("#eng_12").click(function(){
+$(location).attr('href','/eng-12');
+
+
+});
+$("#bio_12").click(function(){
+$(location).attr('href','/bio-12');
+
+
+});
+$("#eco_12").click(function(){
+$(location).attr('href','/economics-12');
+
+
+});
+$("#comp_12").click(function(){
+$(location).attr('href','/comp-12');
+
+
+});
+$("#science_10").click(function(){
+$(location).attr('href','/science-10');
+
+
+});
+$("#eng_10").click(function(){
+$(location).attr('href','/eng-10');
+
+
+});
+$("#sst_10").click(function(){
+$(location).attr('href','/sst-10');
+
+
+});
+
+});
+</script>
+  <!-- <body> -->
+  
+ <section class="team"> 
+    <div class="container py-5 "><!py is padding top and bottom> 
+	   <div class="row text-center">
+	       <div class="col-lg-8 mx-auto col-md-12 col-sm-12 col-12">  <!mx-auto means left and right margin is automatic>
+		      <h1>Frequently asked questions for CBSE Class 12</h1>
+			  <p class="p1">Here we are providing important short and long answer type questions for CBSE Class 12 Board Exam 2021. Practicing these important questions and reviewing their solutions will surely help you prepare for the exam in an effective manner.</p>
+		   </div>
+	   </div>
+	   
+       <div class="row pt-3 mx-auto">
+                     
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		               <div class="row">
+				           <div id="maths_12" class="col-lg-6 col-md-7 col-sm-7 col-7 ">
+						        <div id="a" class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img  src="https://img.icons8.com/cotton/80/000000/trigonometry--v2.png" alt="..."/>
+                                      <br>
+									  <h4 class="card-title">Maths</h4>
+                                    </div>
+                                 </div>
+				           </div>
+				           
+						 <div  id="physics_12" class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img src="https://img.icons8.com/cotton/80/000000/physics-book--v2.png" alt=".."/>
+                                      <br>
+									  <h4 class="card-title">Physics</h4>
+                                    </div>
+                                 </div>						
+				           </div>
+					   </div>
+					</div>
+                   
+				    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		               <div class="row">
+					   
+					    <div id="chem_12"class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img src="https://img.icons8.com/bubbles/80/000000/test-tube.png" alt=".."/>
+                                      <br>
+									  <h4 class="card-title">Chemistry</h4>
+                                    </div>
+                                 </div>						
+				           </div>
+				             <div id="pe_12"class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                   <img src="https://img.icons8.com/bubbles/80/000000/strength.png" alt="..."/>
+                                      <br>
+									  <h4 class="card-title">Physical Education
+                                    </div>
+                                 </div>						
+				           </div>
+						 
+				        </div>
+		            </div>
+	          
+	   
+	   </div>
+	   <br>
+	    <div class="row pt-3 mx-auto">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		               <div class="row">
+				            <div id="eng_12" class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img src="https://img.icons8.com/cute-clipart/80/000000/book.png"alt="..."/>
+                                      <br>
+									  <h4 class="card-title">English</h4>
+                                    </div>
+                                 </div>						
+				           </div>
+				           
+						  <div id="bio_12"class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img src="https://img.icons8.com/cute-clipart/80/000000/sprout.png" alt="..."/>
+                                      <br>
+									  <h4 class="card-title">Biology</h4>
+                                    </div>
+                                 </div>						
+				           </div>
+					   </div>
+					</div>
+                   
+				    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		               <div class="row">
+					   
+					   <div id="eco_12"class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                   <img src="https://img.icons8.com/bubbles/80/000000/economic-improvement.png" alt="..."/>
+                                      <br>
+									  <h4 class="card-title">Economics
+                                    </div>
+                                 </div>						
+				           </div>
+				            <div id="comp_12"class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                   <img src="https://img.icons8.com/clouds/80/000000/laptop.png" alt="..."/>
+                                      <br>
+									  <h4 class="card-title">computing
+                                    </div>
+                                 </div>						
+				           </div>
+						 
+				        </div>
+		            </div>
+	          
+	   
+	   </div>
+	
+        <div class="row text-center mx-auto a">
+	       <div class="col-lg-8 mx-auto col-md-12 col-sm-12 col-12">  <!mx-auto means left and right margin is automatic>
+		      <h1>Frequently asked questions for CBSE Class 10</h1>
+			  <p class="p1">CBSE Important Questions for Class 10  are given here based on the NCERT syllabus. These questions are prepared as per the latest exam pattern. Students must practise these important questions to boost their prepration for the  board exams</p>
+		   </div>
+	   </div>	
+	   
+	   <div class="row pt-3 mx-auto">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		               <div class="row">
+				           <div  id="maths_10" class=" col-lg-6 col-md-7 col-sm-7 col-7 ">
+						        <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img src="https://img.icons8.com/dusk/80/000000/drafting-compass.png"  alt="..."/>
+                                      <br>
+									  <h4 class="card-title">Maths</h4>
+                                    </div>
+                                 </div>
+				           </div>
+				           
+						 <div id="science_10"class=" col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img src="https://img.icons8.com/color/80/000000/dna-helix.png" alt=".."/>
+                                      <br>
+									  <h4 class="card-title">Science</h4>
+                                    </div>
+                                 </div>						
+				           </div>
+					   </div>
+					</div>
+                   
+				    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		               <div class="row">
+					   
+					    <div id="eng_10"class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                   <img src="https://img.icons8.com/plasticine/80/000000/book.png"  alt="..."/>
+                                      <br>
+									  <h4 class="card-title">English
+                                    </div>
+                                 </div>						
+				           </div>
+				             <div id="sst_10"class="col-lg-6 col-md-7 col-sm-7 col-7">
+				                <div class="card zoom shadow" style="width: 16rem; height:16rem;">
+								<div class="card-body text-center " style="padding-top:75px;">
+                                    <img src="https://img.icons8.com/color/80/000000/history-book.png" alt="..."/>
+                                      <br>
+									 <h4 class="card-title">Social Science</h4>
+                                    </div>
+                                 </div>						
+				           </div>
+						 
+				        </div>
+		            </div>
+	          
+	   
+	   </div>
+	   
+	   
+	   
+	   
+	   
+	   
+  </section> <center>
+      <!--<center class="pb-5">-->
+      <img
+        src="{{url_for('static',filename='pics/donate.jpg')}}"
+        height="25%"
+        width="25%"
+        class="mt-4"
+      /><br />
+      <button class="btn btn-info mt-2 mb-5">Donate Us</button>
+    </center>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  
+  </body>
+</html> -->
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div style="height:500px;width:100%;background-color:#d8ebe4;padding-top:80px;">
+	<div class="card w-75 mx-auto">
+	  	<div class="card-body" >
+		    <h3 class="card-title">Scan the QR code to download pdf to your smartphone</h3><br>
+			<div>
+				<center>
+					<img src="{{url_for ('static', filename='QR/class7.png')}}" height="27%" width="27%">
+				</center>
+			</div>
+			<br>
+			<h1 class="text-center">Download directly</h1>  
+			<center>
+				<a href="https://drive.google.com/drive/folders/1b5SgdBlDa4SX-Ci46C-Rb1-shtZTC-ML?usp=sharing" class="btn btn-primary"> &nbsp;&nbsp;Link to Drive &nbsp;&nbsp;</a>
+			</center>
+	  </div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+   
+	<style>
+	img{
+	  border-radius:10px; 
+	}
+	.p{
+	font-weight:lighter;
+	color:gray;
+	}
+	.p1{
+	font-weight:lighter;
+	color:gray;
+	padding-bottom:30px;
+	font-size:21px;
+	}
+	
+	.a{
+	padding-bottom:42px;
+	
+	}
+	
+	
+	</style>
+  
+  
+ <section class="team"> 
+    <div class="container py-5 "><!py is padding top and bottom> 
+	   <div class="row text-center">
+	       <div class="col-lg-8 mx-auto col-md-12 col-sm-12 col-12 a">  <!mx-auto means left and right margin is automatic>
+		      <h2>Chapter wise Important Questions for CBSE Class 12 Physical Education</h2>
+			  
+		   </div>
+	   </div>
+	   
+       <table class="table  table-striped table-hover">
+         <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/physical-education-chapter-1-class-12.docx')}}">Chapter 1 - Planning in Sports</a></h5></td>
+         </tr>
+		 <!-- <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/')}}">Chapter 2 - Sports and Nutrition</a></h5></td>
+         </tr> -->
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/Yoga-and-lifestyle.docx')}}">Chapter 3 - Yoga and Lifestyle</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/specially-abled-class-12-hpe.docx')}}">Chapter 4 - Physical Education and Sports for CWSN – Children with Special Needs : Divyangs</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/Children-and-sports.docx')}}">Chapter 5 - Children and Sports</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/women-and-sports.docx')}}">Chapter 6 - Women and Sports</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/Measurement-in-sports.docx')}}">Chapter 7 - Test and Measurement in Sports</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/Physiology-in-sports.docx')}}">Chapter 8 - Physiology and Sports</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/sports-and-medicines.docx')}}">Chapter 9 - Sports Medicine</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/biomechanics-in-sports.docx')}}">Chapter 10 - Kinesiology, Biomechanics and Sports</a></h5></td>
+         </tr>
+		 <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/psychology-in-sports.docx')}}">Chapter 11 - Psychology and Sports</a></h5></td>
+         </tr>
+		 <!-- <tr><td><h5><a href="{{url_for ('static', filename='FAQ/hpe-class-12/.docx')}}">Chapter 12 - Training in Sports</a></h5></td>
+         </tr> -->
+        </table>   
+  </section>
+ {% endblock %}

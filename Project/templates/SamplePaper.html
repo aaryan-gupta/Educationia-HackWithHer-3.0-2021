@@ -1,0 +1,200 @@
+{% extends "layout.html" %} {% block body %}
+<style>
+  .zoom {
+    transition: transform 0.2s;
+    width: 40px;
+    height: 40px;
+  }
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+</style>
+<div class="container">
+  <h3 class="pt-5">
+    We at {{params["website_name"]}} are providing the study material of CBSE:
+    Books, Last Years paper, Sample paper and many other books, so that every
+    child can learn and make their dreams come true.
+  </h3>
+  <p class="pt-3 pb-3">
+    You will get the study material by clicking the link for the respective
+    class. It will redirect you to our safe and trusted Google Drive from where
+    you can download the Books you need.
+  </p>
+  <center>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card zoom shadow" style="width: 18rem; height: 100%">
+          <div class="card-body text-center">
+            <h5 class="card-text" style="padding-top: 20px">
+              To get the latest information related to the latest Syllabus
+            </h5>
+            <a
+              class="btn btn-info"
+              href="http://cbseacademic.nic.in/revisedcurriculum_2021.html"
+            >
+              Click here
+            </a>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card zoom shadow" style="width: 18rem; height: 100%">
+          <!-- <img src="{{url_for ('static', filename='pics/logo.jpeg')}}" class="card-img-top" alt="..."> -->
+          <div class="card-body text-center">
+            <h5 class="card-text" style="padding-top: 20px">
+              The CBSE changed the current syllabus due to COVID-19, which you
+              can download from
+            </h5>
+            <a class="btn btn-info" href="https://ncert.nic.in/syllabus.php">
+              Click here
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+  <marquee
+    direction="left"
+    scrolldelay="10"
+    onMouseOver="this.stop()"
+    onMouseOut="this.start()"
+    class="font-weight-bold mt-5 mb-5"
+  >
+    Note:- The Syllabus for the Classes will change after the New Education
+    Policy(NEP). More news on NEP will be available
+    <a href="https://www.education.gov.in/hi"> here</a>.
+  </marquee>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="text-center font-italic text-underline">
+        Sample Papers Class 10th
+      </h3>
+      <table border="1" class="mt-4 mb-4 table">
+        <tr class="thead-dark text-center text-uppercase">
+          <th><b>Subject</b></th>
+          <th><b>Links</b></th>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Mathematics</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/MathsBasic-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Science</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Science-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td class="font-weight-bold">Social Science</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/SocialScience-SQP.pdf"
+            >
+              Click here
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="font-weight-bold">Hindi</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindiCourseA-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td class="font-weight-bold">English</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/EnglishL-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <h3 class="text-center font-italic text-underline">
+        Sample Papers Class 12th
+      </h3>
+      <table border="1" class="mt-4 mb-4 table">
+        <tr class="thead-dark text-center text-uppercase">
+          <th><b>Subject</b></th>
+          <th><b>Links</b></th>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Mathematics</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassXII_2020_21/Maths-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">English</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassXII_2020_21/EnglishCore-SQP.pdf"
+            >
+              Click here
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Physics</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassXII_2020_21/Physics-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Biology</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassXII_2020_21/Biology-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Chemistry</td>
+          <td>
+            <a
+              href="http://cbseacademic.nic.in/web_material/SQP/ClassXII_2020_21/Chemistry-SQP.pdf"
+              >Click here</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+    <center>
+      <!--<center class="pb-5">-->
+      <img
+        src="{{url_for('static',filename='pics/donate.jpg')}}"
+        height="25%"
+        width="25%"
+        class="mt-4"
+      /><br />
+      <button class="btn btn-info mt-2 mb-5">Donate Us</button>
+    </center>
+  </div>
+</div>
+
+{% endblock %}

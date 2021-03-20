@@ -1,0 +1,357 @@
+{% extends "layout.html" %} {% block body %}
+<style>
+  .zoom {
+    transition: transform 0.2s;
+    width: 40px;
+    height: 40px;
+  }
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+</style>
+<div class="container">
+  <h3 class="pt-5">
+    We at {{params["website_name"]}} are providing the study material of CBSE:
+    Books, Last Years paper, Sample paper and many other books, so that every
+    child can learn and make their dreams come true.
+  </h3>
+  <p class="pt-3 pb-3">
+    You will get the study material by clicking the link for the respective
+    class. It will redirect you to our safe and trusted Google drive from where
+    you can download the Books you need.
+  </p>
+  <center>
+    <div class="row">
+      <div class="col-md-6">
+        <div
+          class="card zoom shadow"
+          style="width: 18rem; height: 100%; border-radius: 10%"
+        >
+          <div class="card-body">
+            <p class="card-text">Datesheet for 10th</p>
+            <a
+              class="btn btn-info"
+              href="https://www.cbse.gov.in/cbsenew/documents//CLASS-X-FOR%20HOSTING-UPDATED.pdf"
+            >
+              Click here
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="card zoom shadow"
+          style="width: 18rem; height: 100%; border-radius: 10%"
+        >
+          <div class="card-body">
+            <p class="card-text">Datesheet for 12th</p>
+            <a
+              class="btn btn-info"
+              href="https://www.cbse.gov.in/cbsenew/documents//CLASS-XII-FOR%20HOSTING-UPDATED.pdf"
+            >
+              Click here
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+  <h2 class="mt-5 mb-5 text-center text-underline font-italic">
+    Last Year Papers
+  </h2>
+  <h3 class="mb-4">Class 10th</h3>
+  <!-- <table border="1" class="table">
+		<tr class="thead-dark text-center text-uppercase">
+			<th><strong>Subject</strong></th>
+			<th><strong>Links</strong></th>
+		</tr>
+		<tr>
+			<td>English</td>
+			<td><a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/02/28115217/CBSE-Class-10-English-Lang-and-Lit-Paper-2019.pdf">2019
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/12163801/CBSE-Class-10-English-Question-Paper-2018-embibe.pdf">2018
+					Paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13172800/CBSE-Class-10-English-Question-Paper-20171.pdf">2017
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/12/04182202/CBSE-CLASS-10-ENGLISH-COMM-SYLLABUS-2016-EMBIBE.pdf">2016
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13172733/CBSE-Class-10-English-Question-Paper-20131.pdf">2013
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13172443/CBSE-Class-10-English-Question-Paper-20121.pdf">2012
+					paper&nbsp;</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Hindi</td>
+			<td><a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/02/28122728/CBSE-Class-10-Hindi-A-Question-Paper-2019.pdf">2019
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/12164713/CBSE-Class-10-Hindi-A-Question-Paper-2018.pdf">2018
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13172834/edited_CBSE-Class-10-Hindi-A-Question-Paper-2017.pdf">2017
+					paper&nbsp;</a>
+			</td>
+		</tr>
+		<tr>
+			<td> Social Science</td>
+			<td><a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/02/28123915/CBSE-Class-10-Social-Science-Question-Paper-2019.pdf">2019
+					paper</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/12170317/CBSE-Class-10-Social-Science-Question-Paper-2018.pdf">2018
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173422/CBSE-Class-10-Social-Science-Question-Paper-20171.pdf">2017
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173405/CBSE-Class-10-Social-Science-Question-Paper-20161.pdf">2016
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173339/CBSE-Class-10-Social-Science-Question-Paper-20131.pdf">2013
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173320/CBSE-Class-10-Social-Science-Question-Paper-20121.pdf">2012
+					paper&nbsp;</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Science</td>
+			<td><a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/02/28132001/CBSE-Class-10-Science-Question-Paper-2019.pdf">2019
+					paper</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/12171708/CBSE-Class-10-Science-Question-Paper-2018.pdf">2018
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173859/CBSE-Class-10-Science-Question-Paper-20171.pdf">2017
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173838/CBSE-Class-10-Science-Question-Paper-20161.pdf">2016
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173811/CBSE-Class-10-Science-Question-Paper-20151.pdf">2015
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173749/CBSE-Class-10-Science-Question-Paper-20131.pdf">2013
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13173733/CBSE-Class-10-Science-Question-Paper-20121.pdf">2012
+					paper&nbsp;</a>
+			</td>
+		</tr>
+		<tr>
+			<td> Mathematics</td>
+			<td><a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/02/28133207/CBSE-Class-10-Maths-Question-Paper-2019.pdf">2019
+					paper</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/11/20105932/CBSE-Class-10-Maths-Question-Paper-2018.pdf">2018
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13174433/CBSE-Class-10-Maths-Question-Paper-20171.pdf">2017
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13174418/CBSE-Class-10-Maths-Question-Paper-20161.pdf">2016
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13174403/CBSE-Class-10-Maths-Question-Paper-20151.pdf">2015
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13174347/CBSE-Class-10-Maths-Question-Paper-20131.pdf">2013
+					paper&nbsp;</a>
+				<a
+					href="https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2018/02/13174329/CBSE-Class-10-Maths-Question-Paper-20121.pdf">2012
+					paper&nbsp;</a>
+			</td>
+		</tr>
+	</table> -->
+  <table class="table">
+    <tr class="thead-dark">
+      <th>10</th>
+      <th>
+        <a class="text-white" href="/last-year-paper/10/english">English</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/10/maths">Maths</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/10/science">Science</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/10/social"
+          >Social Science</a
+        >
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/10/hindi">Hindi</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/10/punjabi">Punjabi</a>
+      </th>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      {% if clas == "10" %} {% for sub10 in subject %}
+      <td>
+        <a href="{{sub10.url}}" class="btn btn-success"
+          >{{sub10.subject}} {{sub10.year}}</a
+        >
+      </td>
+      {% endfor %} {% endif %}
+    </tr>
+  </table>
+
+  <h3 class="mt-4 mb-4">Class 12th</h3>
+  <!-- <table border="1" class="table">
+		<tr class="thead-dark text-center text-uppercase">
+			<th><strong>Subject</strong></th>
+			<th><strong>Links</strong></th>
+		</tr>
+		<tr>
+			<td>Mathematics</td>
+			<td><a href="https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Mathematics.zip">2020
+					paper</a>&nbsp;
+				<a href="https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/MATHEMATICS.zip">2019
+					paper&nbsp;</a>&nbsp;
+				<a href="https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/maths.zip">2018
+					paper&nbsp;</a>&nbsp;
+				<a href="https://www.cbse.gov.in/cbsenew/question-paper/2017/XII/maths.rar">2017
+					paper&nbsp;</a>&nbsp;
+				<a href="https://www.cbse.gov.in/cbsenew/question-paper/2016/XII/maths.zip">2016
+					paper&nbsp;</a>&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>Physics</td>
+			<td><a href="https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Physics.zip">2020
+					paper</a>&nbsp;
+				<a href="https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/PHYSICS.zip">2019
+					paper&nbsp;&nbsp;</a>&nbsp;
+				<a href="https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/physics.zip">2018
+					paper&nbsp;</a>&nbsp;<a href="https://www.cbse.gov.in/cbsenew/question-paper/2017/XII/phy.rar">2017
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2016/XII/physics.zip">2016
+					paper&nbsp;</a>&nbsp;&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>Chemistry</td>
+			<td><a href="https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Chemistry.zip">2020
+					paper&nbsp;</a><a href="https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/CHEMISTRY.zip">2019
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/chemistry.zip">2018
+					paper&nbsp;</a>&nbsp;<a href="https://www.cbse.gov.in/cbsenew/question-paper/2017/XII/chem.rar">2017
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2016/XII/chemistry.zip">2016
+					paper&nbsp;</a>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Biology</td>
+			<td><a href="https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Biology.zip">2020
+					paper&nbsp;&nbsp;</a><a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/BIOLOGY.zip">2019
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/biology.rar">2018
+					paper&nbsp;</a>&nbsp;<a href="https://www.cbse.gov.in/cbsenew/question-paper/2017/XII/bio.rar">2017
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2016/XII/biology.zip">2016
+					paper&nbsp;</a>&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>English</td>
+			<td><a href="https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/English%20Core.zip">2020
+					paper&nbsp;&nbsp;&nbsp;</a><a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/ENGLISH%20CORE.zip">2019
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/english.zip">2018
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2017/XII/eng_core.rar">2017
+					paper&nbsp;</a>&nbsp;<a
+					href="https://www.cbse.gov.in/cbsenew/question-paper/2016/XII/english.zip">2016
+					paper&nbsp;</a>&nbsp;</td>
+		</tr>
+	</table> -->
+  <table class="table">
+    <tr class="thead-dark">
+      <th>12</th>
+      <th>
+        <a class="text-white" href="/last-year-paper/12/english">English</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/12/maths">Maths</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/12/physics">Physics</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/12/chemistry">Chemistry</a>
+      </th>
+      <th>
+        <a class="text-white" href="/last-year-paper/12/biology">Biology</a>
+      </th>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      {% if clas == "12" %} {% for sub12 in subject %}
+      <td>
+        <a href="{{sub12.url}}" class="btn btn-success"
+          >{{sub12.subject}} {{sub12.year}}</a
+        >
+      </td>
+      {% endfor %} {% endif %}
+    </tr>
+  </table>
+  <center class="pb-5">
+    <img
+      src="{{url_for('static',filename='pics/donate.jpg')}}"
+      height="25%"
+      width="25%"
+    /><br />
+    <button class="btn btn-info mt-2">Donate Us</button>
+  </center>
+</div>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+	Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<table>
+					{% for sub in subject %}
+					<tr>
+						<td><a href="{{sub.url}}" class="btn btn-success">{{sub.subject}} {{sub.year}}</a></td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+{% endblock %}

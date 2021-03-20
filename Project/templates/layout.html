@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- <style>
+			h1:hover h2:hover h3:hover h4:hover h5:hover h6:hover {
+				text-shadow: 5px 5px 5px gray;
+				transition: ease all 0.5s;
+				letter-spacing: 2px;
+			}
+
+			.center {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			td {
+				text-align: center;
+			}
+		</style> -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script async src="https://cse.google.com/cse.js?cx=7c919c92917bad18f"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- Compressed CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+
+	<!-- Compressed JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+
+	<!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css">
+
+	<!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css">
+
+	<!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css">
+
+	<noscript id="deferred-styles">
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+			rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</noscript>
+	<script>
+		var loadDeferredStyles = function () {
+			var addStylesNode = document.getElementById("deferred-styles");
+			var replacement = document.createElement("div");
+			replacement.innerHTML = addStylesNode.textContent;
+			document.body.appendChild(replacement);
+			addStylesNode.parentElement.removeChild(addStylesNode);
+		};
+		var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+			window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+		if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+		else window.addEventListener('load', loadDeferredStyles);
+	</script>
+
+	<title>Educationia</title>
+
+	<!-- <link rel="shortcut icon" type="image/jpg" href="{{url_for('static', filename='pics/favicon.ico')}}" /> -->
+	<!-- <link rel="apple-touch-icon" type="image/png" sizes="57x57"
+		href="{{url_for('static', filename='pics/apple-icon-57x57.png')}}"> -->
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"
+		href="{{url_for('static', filename='pics/android-icon-192x192.png')}}">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<style>
+		/* nav .navbar .navbar-expand-lg .bg-warning {
+				background-color: rgb(254, 255, 240);
+
+			}
+
+			.navbar-brand {
+				font: size 44px;
+			} */
+
+		body {
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: contain;
+			/* background-size: cover; */
+		}
+
+		.underline {
+			transition: ease all 0.5s;
+		}
+
+		.underline:hover {
+			/* background-color: #5cb85c; */
+			border-radius: 5%;
+			transition: ease all 0.5s;
+			transform: rotate(-5deg);
+			text-decoration: underline;
+			/* letter-spacing: 2px; */
+		}
+	</style>
+
+</head>
+
+<!-- <body style="background-image: url({{url_for ('static', filename='pics/web.jpg')}});"> -->
+
+<!-- <body style="background-image: url({{url_for ('static', filename='pics/wat.jpg')}});"> -->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-warning"> -->
+<nav class="navbar navbar-expand-lg bg-dark ">
+	<a class="navbar-brand text-white font-weight-bolder font-awesome underline pl-3 pr-3" href="/">
+		<b>{{params["website_name"]}}</b>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+		aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+			<a class="nav-link text-white font-weight-bold font-awesome ml-3 mr-3 underline" href="/books">
+				Books <span class="sr-only">(current)</span>
+			</a>
+			<a class="nav-link text-white font-weight-bold font-awesome ml-3 mr-3 underline" href="/sample-paper">
+				Sample Papers
+			</a>
+			 <a class="nav-link text-white font-weight-bold font-awesome ml-3 mr-3 underline" href="/last-year-paper">
+				Last Year Papers
+			</a> 
+			<a class="nav-link text-white font-weight-bold font-awesome ml-3 mr-3 underline" href="/faq">
+				FAQ
+			</a>
+			<a class="nav-link text-white font-weight-bold font-awesome ml-3 mr-3 underline"
+				href="mailto:educationia3@gmail.com" tabindex="-1" aria-disabled="true">Queries</a>
+			<a class="nav-link text-white font-weight-bold font-awesome ml-3 mr-3 underline" href="/about">
+				About Us
+			</a>
+			<a class="nav-link text-white font-weight-bold font-awesome ml-5 pl-5 pr-5 underline" href="/dashboard">
+				Admin Dashboard
+			</a> 
+		</div>
+	</div>
+</nav>
+
+{% block body %} {% endblock %}
+
+<!--<div class="footer position-fixed-bottom">
+			<div class="gcse-searchbox-only"></div>
+		</div>-->
+<script>
+	AOS.init();
+</script>
+</body>
+
+</html>
